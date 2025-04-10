@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Calculator Dual Theme</title>
+</head>
+
+<body>
+
+    <main class="calculator-container">
+
+        <!-- BOTÃO DE TEMA -->
+        <header class="top-bar">
+            <label class="switch-theme" aria-label="Switch Theme">
+                <input type="checkbox" id="themeToggle" />
+                <span class="slider"></span>
+            </label>
+        </header>
+
+        <!-- DISPLAY -->
+        <section class="display" aria-label="Calculator Screen">
+            <div id="expression">0</div>
+            <div class="result" aria-live="polite"></div>
+        </section>
+
+        <!-- BOTÕES -->
+        <section class="buttons" aria-label="Calculator Keyboard">
+            <button class="btn fuction" data-action="clear">AC</button>
+            <button class="btn fuction" data-action="backspace" aria-label="Delete"><i
+                    class="fas fa-delete-left"></i></button>
+            <button class="btn operator" data-value="/">÷</button>
+            <button class="btn operator" data-value="*">x</button>
+
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn operator" data-value="-">-</button>
+
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn operator" data-value="+">+</button>
+
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn equal" data-action="calculate" aria-label="Calculate Result">=</button>
+
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+        </section>
+
+    </main>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
