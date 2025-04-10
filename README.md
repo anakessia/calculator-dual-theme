@@ -11,3 +11,8 @@ Basta clonar o repositório e abrir o arquivo `index.html` no navegador:
 
 ```bash
 git clone https://github.com/anakessia/calculator-dual-theme.git
+
+```
+## Licença
+Este projeto está sob a licença MIT. Use, modifique e compartilhe à vontade!
+Feito com 💻 por @anakessia
