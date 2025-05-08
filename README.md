@@ -1,5 +1,5 @@
 
-# Calculadora Simples
+# 🧮Calculadora Simples
 
 Uma calculadora desenvolvida com HTML, CSS e JavaScript — inclui modo escuro e realiza operações aritméticas básicas. Este projeto foi criado com o objetivo de praticar e reforçar conhecimentos em front-end.
 
