@@ -55,15 +55,15 @@ document.addEventListener('keydown', (e) => {
   // Check if the pressed key is a number, operator or other valid keys
   if (key >= 0 && key <= 9 || ['+', '-', '*', '/', '.', 'Enter', 'Backspace'].includes(key)) {
     if (key === 'Enter') {
-      // Simula o clique no botão "="
+      // Simulates clicking the "=" button
       const equalButton = document.querySelector('[data-action="calculate"]');
       equalButton.click();
     } else if (key === 'Backspace') {
-      // Simula o clique no botão "backspace"
+      // Simulates clicking the "backspace" button
       const backspaceButton = document.querySelector('[data-action="backspace"]');
       backspaceButton.click();
     } else {
-      // Encontra o botão correspondente à tecla pressionada e simula o clique
+      // Find the button corresponding to the pressed key and simulate the click
       const button = Array.from(buttons).find(button => button.dataset.value === key);
       if (button) {
         button.click();
