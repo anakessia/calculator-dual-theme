@@ -47,3 +47,27 @@ function calculateResult() {
     resultDisplay.textContent = "Erro";
   }
 }
+
+// Adding event to detect key presses
+document.addEventListener('keydown', (e) => {
+  const key = e.key; // Captura a tecla pressionada
+  
+  // Check if the pressed key is a number, operator or other valid keys
+  if (key >= 0 && key <= 9 || ['+', '-', '*', '/', '.', 'Enter', 'Backspace'].includes(key)) {
+    if (key === 'Enter') {
+      // Simulates clicking the "=" button
+      const equalButton = document.querySelector('[data-action="calculate"]');
+      equalButton.click();
+    } else if (key === 'Backspace') {
+      // Simulates clicking the "backspace" button
+      const backspaceButton = document.querySelector('[data-action="backspace"]');
+      backspaceButton.click();
+    } else {
+      // Find the button corresponding to the pressed key and simulate the click
+      const button = Array.from(buttons).find(button => button.dataset.value === key);
+      if (button) {
+        button.click();
+      }
+    }
+  }
+});
