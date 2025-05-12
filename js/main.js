@@ -50,20 +50,20 @@ function calculateResult() {
 
 // Adding event to detect key presses
 document.addEventListener('keydown', (e) => {
-  const key = e.key; // Captura a tecla pressionada
+  const key = e.key;
   
   // Check if the pressed key is a number, operator or other valid keys
   if (key >= 0 && key <= 9 || ['+', '-', '*', '/', '.', 'Enter', 'Backspace'].includes(key)) {
     if (key === 'Enter') {
-      // Simulates clicking the "=" button
+      // Simula o clique no botão "="
       const equalButton = document.querySelector('[data-action="calculate"]');
       equalButton.click();
     } else if (key === 'Backspace') {
-      // Simulates clicking the "backspace" button
+      // Simula o clique no botão "backspace"
       const backspaceButton = document.querySelector('[data-action="backspace"]');
       backspaceButton.click();
     } else {
-      // Find the button corresponding to the pressed key and simulate the click
+      // Encontra o botão correspondente à tecla pressionada e simula o clique
       const button = Array.from(buttons).find(button => button.dataset.value === key);
       if (button) {
         button.click();
